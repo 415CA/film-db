@@ -2,7 +2,6 @@ import React from 'react';
 import { image } from '../../API';
 
 const Poster = ({ movies }) => {
-console.log(movies);
   return (
     <>
       <div className='cf'>

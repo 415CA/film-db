@@ -2,7 +2,7 @@ import React from 'react';
 
 const ReleaseDate = () => {
   return (
-    <div />
+    <div>Release Date</div>
   );
 };
 

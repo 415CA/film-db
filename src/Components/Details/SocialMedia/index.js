@@ -2,7 +2,7 @@ import React from 'react';
 
 const SocialMedia = () => {
   return (
-    <div />
+    <div>Social Media</div>
   );
 };
 

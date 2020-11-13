@@ -1,9 +1,10 @@
 import React from 'react';
+import Details from '../../Components/Details';
 
 const FilmDetails = () => {
   return (
     <div>
-      FilmDetails
+      <Details />
     </div>
   );
 };

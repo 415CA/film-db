@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { genre, search, TMDB } from '../../API';
 import { Poster } from '../../Components';
+import SearchHeader from '../../Components/Search/SearchHeader';
 
 const Search = () => {
   const [data, setData] = useState([]);
@@ -28,26 +29,29 @@ const Search = () => {
 
   return (
     <>
+      <SearchHeader />
       <form 
-        className='pa4 black-80'
+        className='flex items-center justify-center pa4 black-80'
         onSubmit={event => {
           setUrl(TMDB + search(query));
           event.preventDefault();
         }} >
-        <div className='measure'>
         <input
+          className='input-reset ba b--black-20 pa2 mb2 db w-100 measure'
           type='text'
           value={query}
           onChange={event => setQuery(event.target.value)}
         />
-        <button type='submit'>Search</button>
-        </div>
+        <button 
+          className='f6 link dim br2 ph3 pv2 mb2 dib white bg-black'
+          type='submit'
+        >Search</button>
       </form>
 
       {isError && <div>Something went wrong ...</div>}
 
       {isLoading ? (
-        <div>Loading ...</div>
+        <div className='tc f1 i'>Loading ...</div>
       ) : (
           <Poster movies={data} />
       )}

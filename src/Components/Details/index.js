@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import Cast from './Cast';
 import Crew from './Crew';
 import Description from './Description';
@@ -7,7 +7,8 @@ import Runtime from './Runtime';
 import SocialMedia from './SocialMedia';
 import UserScore from './UserScore';
 
-const Details = () => {
+const Details = (film) => {
+
   return (
     <>
       <Cast />

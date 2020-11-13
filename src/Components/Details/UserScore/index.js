@@ -2,7 +2,7 @@ import React from 'react';
 
 const UserScore = () => {
   return (
-    <div />
+    <div>User Score</div>
   );
 };
 
