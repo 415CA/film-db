@@ -1,10 +1,12 @@
 import React from 'react';
 import Details from '../../Components/Details';
 
-const FilmDetails = () => {
+const FilmDetails = (film) => {
+  const TMDB_ID = film.match.params.id; 
+  
   return (
     <div>
-      <Details />
+      <Details film={TMDB_ID}/>
     </div>
   );
 };

@@ -7,8 +7,7 @@ import Runtime from './Runtime';
 import SocialMedia from './SocialMedia';
 import UserScore from './UserScore';
 
-const Details = (film) => {
-
+const Details = ({ movie }) => {
   return (
     <>
       <Cast />
