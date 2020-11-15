@@ -1,7 +1,6 @@
 import axios from 'axios'; 
 
 const TMDB_API = process.env.REACT_APP_TMDB_API;
-const NY_TIMES_API = process.env.REACT_APP_NY_TIMES_API;
 const TMDB = 'https://api.themoviedb.org/3';
 
 const movies = axios.create({
@@ -18,7 +17,6 @@ const nyTimes = axios.create({
   headers: {
     Accept: 'application/json',
     'Content-type': 'application/json',
-    Authorization: NY_TIMES_API,
   },
 });
 

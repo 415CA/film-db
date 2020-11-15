@@ -66,8 +66,8 @@ const explore = (tmdbID, pageNum = 1) => {
   };
 };
 
-  const nytreviews = (title) => {
+  const nytReviews = (title) => {
     return `?order=by-title&query=${title}&api-key=${NY_TIMES_API }`;
   };
 
-export { genre, search, explore, nytreviews };
+export { genre, search, explore, nytReviews };

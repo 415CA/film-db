@@ -1,4 +1,4 @@
 import { axios, image, movies, nyTimes, TMDB } from './Axios';
-import { search, genre } from './Endpoints';
+import { search, genre, explore, nytReviews } from './Endpoints';
 
-export { axios, image, movies, nyTimes, search, genre, TMDB };
+export { axios, image, movies, nyTimes, search, genre, TMDB, explore, nytReviews };
